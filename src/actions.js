@@ -1,4 +1,5 @@
 const _ = require('lodash')
+var botService = require('./botservice');
 
 module.exports = {
   startGame: state => {
@@ -50,5 +51,17 @@ module.exports = {
   getUserTag: async (state, event, { name, into }) => {
     const value = await event.bp.users.getTag(event.user.id, name)
     return { ...state, [into]: value }
+  },
+
+  validateAnswer: (state, event) => {
+  let isQuestion = false;
+  isQuestion = botService.isQuestion(event.text, function(err, result) {
+    console.log("botService.isQuestion");
+  });
+  return {
+   ...state,
+   isQuestion: isQuestion,
   }
+  }
+
 }

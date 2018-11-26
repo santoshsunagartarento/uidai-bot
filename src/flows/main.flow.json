@@ -14,7 +14,7 @@
       "next": [
         {
           "condition": "true",
-          "node": "ask-question"
+          "node": "checkisquestion"
         }
       ]
     },
@@ -35,9 +35,32 @@
     {
       "id": "25e5cd0fbe",
       "name": "over",
-      "next": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
       "onEnter": [
-        "say #!text-zss1Nr"
+        "say #!text-FFnHzE"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d7f4885c86",
+      "name": "checkisquestion",
+      "next": [
+        {
+          "condition": "state.isQuestion==true",
+          "node": "ask-question"
+        },
+        {
+          "condition": "state.isQuestion==false",
+          "node": "over"
+        }
+      ],
+      "onEnter": [
+        "validateAnswer {}"
       ],
       "onReceive": null
     }

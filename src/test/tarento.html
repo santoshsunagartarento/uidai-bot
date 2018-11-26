@@ -35,5 +35,20 @@ Tarento Website
   enableTranscriptDownload: false // Whether or not to show the transcript download button
 })
 </script>
+<style type="text/css">
+  span.-botpress-channel-web__style__icon___3-4NF.botpress__toggle-convos-button {
+    visibility: hidden;
+  }
+}
+</style>
+<script>
+$(window).bind("load", function() {
+  alert("Loading");
+  $(".botpress__toggle-convos-button").hide();
+
+});
+</script>
+
+
 <!--  <iframe width="1536" height="864" src="https://www.youtube.com/embed/7_bEq4AQ4sw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 </html>
