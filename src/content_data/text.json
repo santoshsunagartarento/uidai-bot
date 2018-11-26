@@ -1,0 +1,20 @@
+[
+  {
+    "id": "text-ky4TG7",
+    "formData": {
+      "text": "Hi There, I'm Aadhaar bot. I'm here to help you with your queries related to Aadhaar.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-26T10:46:39.027Z"
+  },
+  {
+    "id": "text-FkuZys",
+    "formData": {
+      "text": "You have to visit an Aadhaar Enrolment center setup by enrolment agency to enrol for Aadhaar. You can also search nearest enrolment center by clicking on 'Locate enrolment center' or 'https://appointments.uidai.gov.in/easearch.aspx'. You have enter state, district and locality for finding the nearest enrolment center.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-26T11:01:19.828Z"
+  }
+]

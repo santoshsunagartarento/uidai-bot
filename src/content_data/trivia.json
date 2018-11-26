@@ -1,0 +1,15 @@
+[
+  {
+    "id": "trivia-question-Vxxftc",
+    "formData": {
+      "question": "You can talk to me by  typing in your questions or clicking  on the samples shown below",
+      "good": "NA",
+      "bad": [
+        "Can I update my  Aadhaar details?",
+        "Where can I enrol for Aadhaar?"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-26T10:47:28.156Z"
+  }
+]

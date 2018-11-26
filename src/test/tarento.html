@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   alert("Loading Tarento web");
+});
+</script>
+
+</head>
+<body>
+<div style="background-color:lightblue">
+  <h3><img width="200" height="46" src="https://tarento.com/wp-content/uploads/2018/04/logo-h_small.png" class="attachment-full size-full" alt=""></h3>
+</div>
+Tarento Website
+<div class="sow-slider-image-wrapper">
+<h1 style="text-align: center; font-size: 62px;">TARENTO</h1>
+<p style="text-align: center">Data. Digital. And beyond.</p>
+</div>
+</body>
+<script src="http://localhost:4000/api/botpress-platform-webchat/inject.js"></script>
+<!-- Write your comments here -->
+<script>
+  window.botpressWebChat.init({
+  host: 'http://localhost:4000',
+  botName: 'Aadhaar Bot', // Name of your bot
+  botAvatarUrl: 'https://avatars3.githubusercontent.com/u/1315508?v=4&s=400', // Default avatar URL of the image (e.g., 'https://avatars3.githubusercontent.com/u/1315508?v=4&s=400' )
+  botConvoTitle: 'Aadhaar Bot', // Title of the first conversation with the bot
+  botConvoDescription: '',
+  backgroundColor: '#ffffff', // Color of the background
+  textColorOnBackground: '#666666', // Color of the text on the background
+  foregroundColor: '#0176ff', // Element background color (header, composer, button..)
+  textColorOnForeground: '#ffffff', // Element text color (header, composer, button..)
+  showUserName: false, // Whether or not to show the user's name
+  enableTranscriptDownload: false // Whether or not to show the transcript download button
+})
+</script>
+
+<style>
+.-botpress-channel-web__style__external___1BNU9 .-botpress-channel-web__style__internal___2QK5K {
+  height: 50% !important;
+  border-top: 1px solid #ccc;
+}
+</style>
+
+<!--  <iframe width="1536" height="864" src="https://www.youtube.com/embed/7_bEq4AQ4sw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+</html>

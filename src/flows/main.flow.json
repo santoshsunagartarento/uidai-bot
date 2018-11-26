@@ -1,0 +1,40 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "rjamSg7LNJbzrEoftkYxQ",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-question"
+        }
+      ]
+    },
+    {
+      "id": "4a2d137247",
+      "name": "ask-question",
+      "next": [],
+      "onEnter": [
+        "say #!text-FkuZys"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "25e5cd0fbe",
+      "name": "over",
+      "next": [],
+      "onEnter": [
+        "say #!text-zss1Nr"
+      ],
+      "onReceive": null
+    }
+  ]
+}
