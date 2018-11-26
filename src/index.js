@@ -10,6 +10,7 @@ module.exports = bp => {
   ////////////////////////////
 
   // Register all renderers
+  bp.middlewares.load()
   Object.keys(renderers).forEach(name => {
     bp.renderers.register(name, renderers[name])
   })
@@ -45,7 +46,7 @@ module.exports = bp => {
   bp.hear({ type: /visit/i }, async (event, next) => {
     event.reply('#!text-ky4TG7')
     event.reply('#!trivia-question-Vxxftc')
-    //next() //Commented for now to fix start message issue
+    next() //Commented for now to fix start message issue
   })
   //End: Added for start message
 }

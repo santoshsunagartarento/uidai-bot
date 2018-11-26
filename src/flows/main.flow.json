@@ -21,11 +21,16 @@
     {
       "id": "4a2d137247",
       "name": "ask-question",
-      "next": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
       "onEnter": [
         "say #!text-FkuZys"
       ],
-      "onReceive": []
+      "onReceive": null
     },
     {
       "id": "25e5cd0fbe",
